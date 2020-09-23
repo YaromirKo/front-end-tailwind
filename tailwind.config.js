@@ -1,6 +1,15 @@
 // const plugin = require('tailwindcss/plugin')
 
 module.exports = {
+    theme: {
+        extend: {
+            borderRadius: {
+                large: '16px',
+                'db-large': '24px'
+            }
+        }
+
+    }
   // prefix: 'tw-',
   // important: true,
   // plugins: [
