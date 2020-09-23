@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:mx-24 mx-5 mt-16">
+  <div class="lg:mx-0 mx-5 mt-16">
     <div class="flex justify-between items-end">
       <div class="text-center text-2xl font-bold">Stays in Finland</div>
       <div class="text-center">12+ stays</div>

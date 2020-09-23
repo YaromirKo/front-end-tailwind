@@ -1,6 +1,8 @@
 <template>
-  <NavBar/>
-  <ContentBody/>
+  <div class="container mx-auto">
+    <NavBar/>
+    <ContentBody/>
+  </div>
 </template>
 
 <script>
