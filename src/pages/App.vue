@@ -2,17 +2,20 @@
   <div class="container mx-auto">
     <NavBar/>
     <ContentBody/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import NavBar from "@/components/NavBar";
 import ContentBody from "@/components/ContentBody";
+import Footer from "@/components/Footer";
 export default {
   name: 'App',
   components: {
     NavBar,
-    ContentBody
+    ContentBody,
+    Footer
   }
 }
 </script>

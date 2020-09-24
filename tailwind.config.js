@@ -4,8 +4,13 @@ module.exports = {
     theme: {
         extend: {
             borderRadius: {
+                middle: '12px',
                 large: '16px',
                 'db-large': '24px'
+            },
+            height: {
+                modal: '40%',
+                'modal-mob': '80%'
             }
         }
 
