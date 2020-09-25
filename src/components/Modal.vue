@@ -1,7 +1,9 @@
 <template>
   <!--Modal-->
-  <div v-if="show" class="fixed w-full md:h-modal h-modal-mob top-0 left-0 flex items-center justify-center bg-gray-400">
-    <button @click="close">close</button>
+  <div v-if="show" @click.self="close" class="fixed w-full h-full top-0 left-0">
+    <div class="lg:h-modal h-modal-mob flex items-center justify-center bg-gray-400">
+      <button @click="close">close</button>
+    </div>
   </div>
 </template>
 

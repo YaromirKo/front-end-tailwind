@@ -10,9 +10,8 @@
       <div class="px-4 py-3 text-red-500 material-icons">search</div>
     </div>
   </div>
-  <teleport to="#app">
-    <Modal v-click-outside="toggleModal" v-model:show="showModal"
-           overflow/>
+  <teleport to="#modal">
+    <Modal v-model:show="showModal"/>
   </teleport>
 </template>
 
