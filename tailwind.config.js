@@ -1,6 +1,27 @@
 // const plugin = require('tailwindcss/plugin')
 
 module.exports = {
+    variants: {
+        backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+    },
+    theme: {
+        extend: {
+            spacing: {
+                'card-img': '24.625rem',
+            },
+            borderRadius: {
+                middle: '12px',
+                large: '16px',
+                'db-large': '24px'
+            },
+            height: {
+                modal: '50%',
+                'modal-mob': '80%',
+                'card-img': '16.668rem'
+            }
+        }
+
+    }
   // prefix: 'tw-',
   // important: true,
   // plugins: [
