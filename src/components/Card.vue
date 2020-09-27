@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-md">
 
-    <img class="h-64 w-full object-cover rounded-db-large" :src="apartment.photo" alt="photo">
+    <img class="w-card-img h-card-img object-cover rounded-db-large" :src="apartment.photo" alt="photo">
 
     <div class="grid grid-flow-col my-4">
       <div v-if="apartment.superHost" class="w-28 text-center rounded-full border-solid border-2 border-gray-700 font-bold text-gray-700 mr-3">SUPER HOST</div>

@@ -6,6 +6,9 @@ module.exports = {
     },
     theme: {
         extend: {
+            spacing: {
+                'card-img': '24.625rem',
+            },
             borderRadius: {
                 middle: '12px',
                 large: '16px',
@@ -13,7 +16,8 @@ module.exports = {
             },
             height: {
                 modal: '50%',
-                'modal-mob': '80%'
+                'modal-mob': '80%',
+                'card-img': '16.668rem'
             }
         }
 
