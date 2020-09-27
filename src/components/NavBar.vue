@@ -3,7 +3,7 @@
     <div class="md:self-center">
       <img src="logo.svg" alt="logo">
     </div>
-    <div class="flex self-center mt-5 md:mt-0 rounded-large border-solid border-none shadow divide-x-2 divide-gray-100 cursor-pointer">
+    <div class="flex self-center items-center mt-5 md:mt-0 rounded-large border-solid border-none shadow divide-x-2 divide-gray-100 cursor-pointer">
       <div @click="toggleMenu" class="px-4 py-3">{{city ? `${city}, Finland` : 'Select city'}}</div>
       <div @click="toggleMenu" class="px-4 py-3">{{adults + children === 0 ? 'Add guests' : `${adults + children} guests`}}</div>
       <div @click="toggleMenu"  class="px-4 py-3 text-red-500 material-icons">search</div>
