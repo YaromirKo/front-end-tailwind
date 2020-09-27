@@ -1,6 +1,9 @@
 // const plugin = require('tailwindcss/plugin')
 
 module.exports = {
+    variants: {
+        backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+    },
     theme: {
         extend: {
             borderRadius: {
@@ -9,7 +12,7 @@ module.exports = {
                 'db-large': '24px'
             },
             height: {
-                modal: '40%',
+                modal: '50%',
                 'modal-mob': '80%'
             }
         }

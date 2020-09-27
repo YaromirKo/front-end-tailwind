@@ -1,10 +1,10 @@
 <template>
   <!--Modal-->
-  <div v-if="show" @click.self="close" class="fixed w-full h-full top-0 left-0">
-    <div class="lg:h-modal h-modal-mob flex items-center justify-center bg-gray-400">
-      <button @click="close">close</button>
+  <transition name="fade">
+    <div v-if="show" @click.self="close" class="fixed w-full h-full top-0 left-0 bg-gray-800 bg-opacity-25">
+      <slot></slot>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -33,6 +33,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 </style>

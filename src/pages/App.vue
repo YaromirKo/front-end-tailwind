@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto outline-none">
     <NavBar/>
     <ContentBody/>
     <Footer/>
@@ -42,5 +42,11 @@ export default {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #a0aec0;
+}
+* {
+  -webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
+  -webkit-tap-highlight-color:rgba(0,0,0,0); /* prevent tap highlight color / shadow */
+  -webkit-user-select:none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
 }
 </style>
