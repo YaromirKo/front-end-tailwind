@@ -15,7 +15,7 @@
 
   <teleport to="#modal">
     <Modal v-model:show="showModal">
-      <div class="w-full lg:h-modal h-auto bg-white md:pt-20 pt-3 relative">
+      <div class="bg-white md:pt-20 pt-3">
         <div class="container mx-auto px-2">
 
           <div class="md:hidden block pb-5">
