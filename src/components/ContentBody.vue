@@ -2,7 +2,7 @@
   <div class="lg:mx-0 mx-5 mt-16">
     <div class="flex justify-between items-end">
       <div class="text-center text-2xl font-bold">Stays in Finland</div>
-      <div class="text-center">12+ stays</div>
+      <div class="text-center">{{store.state.data.length}} stays</div>
     </div>
     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-items-auto gap-8 mt-8" v-if="store.state.apartments.length !== 0">
       <transition-group name="list">
