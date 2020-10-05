@@ -1,6 +1,11 @@
-// const plugin = require('tailwindcss/plugin')
-
 module.exports = {
+    mode: 'layers',
+    layers: ['base', 'components', 'utilities'],
+    purge: [
+        './src/**/*.html',
+        './src/**/*.vue',
+        './src/**/*.jsx',
+    ],
     variants: {
         backgroundColor: ['responsive', 'hover', 'focus', 'active'],
     },
@@ -22,33 +27,4 @@ module.exports = {
         }
 
     }
-  // prefix: 'tw-',
-  // important: true,
-  // plugins: [
-  //   plugin(function({ addComponents }) {
-  //     const buttons = {
-  //       '.btn': {
-  //         padding: '.5rem 1rem',
-  //         borderRadius: '.25rem',
-  //         fontWeight: '600',
-  //       },
-  //       '.btn-blue': {
-  //         backgroundColor: '#3490dc',
-  //         color: '#fff',
-  //         '&:hover': {
-  //           backgroundColor: '#2779bd'
-  //         },
-  //       },
-  //       '.btn-red': {
-  //         backgroundColor: '#e3342f',
-  //         color: '#fff',
-  //         '&:hover': {
-  //           backgroundColor: '#cc1f1a'
-  //         },
-  //       },
-  //     }
-  //
-  //     addComponents(buttons)
-  //   })
-  // ]
 }
